@@ -1,4 +1,4 @@
 <%= simple_form_for(@email_address, :html => {:class => 'form-inline' }) do |f| %>
-    <%= f.input :email, :label => false %>
+    <%= f.input :email, :label => false, :input_html => {:value => "   Enter your email to get notified"} %>
 	<%= f.submit "Keep me updated!" %>
 <% end %>
