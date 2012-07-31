@@ -1,5 +1,8 @@
 Teaser::Application.routes.draw do
+  match 'email_addresses/stats' => 'email_addresses#stats'
+  match 'email_addresses/thanks' => 'email_addresses#thanks'  
   resources :email_addresses
+  root :to => 'email_addresses#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
