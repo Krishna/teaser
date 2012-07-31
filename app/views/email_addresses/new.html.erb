@@ -1,22 +1,31 @@
-<div class="hero-unit" style="text-align:center; background-image: url(./images/moleskine_01.jpg);">
-	<h1 style="font-size: 3em;">A Smarter Notebook for Your iPad</h2>
-	<br />
-	<p>What if you didn't have to carry your notebooks and your iPad all the time?</p>
-
-	<p>What if there was an app that let your organize and search all your notes?</p>
-
-	<p>An app that let you make detailed notes and sketches - with no need for a stylus.</p>
-
-	<p>An app as simple to use, as paper and pen.</p>
-
-	<p>Would you be interested in an app like that?</p>
-
-
-	<br />
-
-	<p>Sign up here to be one of the first to know when it’s ready.</p>
-
-	<%= render 'form' %>
-
-	<p>We will never send you spam, or pass on your email address to anyone else.</p>
+    <div class="row">
+        <div class="feature span12">
+            <h2 class="motto">Tear up the Notebook with <strong>Codex App</strong>.</h2>
+            <h3 class="subheader">The smart notebook for your iPad.</h3>
+			<%= image_tag("pics/feature.png", :id => "feature-screenshot", :alt => "screenshot") %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="12 graded center">            
+            <form class="form-horizontal">
+                <h3>Enter your email to get notified when we launch.</h3>
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-envelope"></i></span>
+<input type="text" id="inputIcon" class="span4" style="font-size:25px; height:25px" placeholder="Your email here">
+                </div>                    
+                <button class="btn">Sign up</button>
+            </form>
+           <p>We wont spam you, and we won't share your email address with anyone.</p>
+        </div>
+	</div>
+	
+<!--
+    <div class="row">
+        <div class="span12 graded center">
+            <p>Coming soon...</p>
+        </div>
+    </div>
+-->
 </div>
+
+

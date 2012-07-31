@@ -1,4 +1,5 @@
 class EmailAddressesController < ApplicationController
+  
   # GET /email_addresses
   # GET /email_addresses.json
   def index
