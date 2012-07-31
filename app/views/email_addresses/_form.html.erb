@@ -1,4 +1,6 @@
 <%= simple_form_for(@email_address, :html => {:class => 'form-inline' }) do |f| %>
-    <%= f.input :email, :label => false, :input_html => {:value => "   Enter your email to get notified"} %>
-	<%= f.submit "Keep me updated!" %>
+<div class="input-prepend">    
+    <%= f.input :email, :label => false, :input_html => {:placeholder => "Your email here", :style => "font-size:25px; height:25px; width: 413px;"} %>
+	<%= f.button :submit, "Send" %>
+</div>	
 <% end %>
