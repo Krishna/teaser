@@ -1,4 +1,5 @@
 Teaser::Application.routes.draw do
+  match '/stats' => 'email_addresses#stats'  
   match 'email_addresses/stats' => 'email_addresses#stats'
   match 'email_addresses/thanks' => 'email_addresses#thanks'  
   resources :email_addresses
