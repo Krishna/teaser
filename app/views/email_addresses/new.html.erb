@@ -8,8 +8,12 @@
         </div>
     </div>
     <div class="row">
-        <div class="12 graded center">            
+        <div class="12 graded center">
+<% if (ab_test("signup_text")) %>
            <h3>Enter your email to get notified when we launch.</h3>
+<% else %>
+			<h3>Sign up to be the first to know when we launch!</h3>
+<% end %>
 			<%= render 'form' %>
            <p>We wont spam you, and we won't share your email address with anyone.</p>
 			<br />			

@@ -60,6 +60,8 @@ class EmailAddressesController < ApplicationController
 
     respond_to do |format|
       if @email_address.save
+        bingo! "signup_text"
+        
         # format.html { redirect_to @email_address, notice: 'Email address was successfully created.' }
         format.html { redirect_to :action => 'thanks'}
         format.json { render json: @email_address, status: :created, location: @email_address }
