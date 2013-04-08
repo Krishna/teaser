@@ -60,7 +60,6 @@ class EmailAddressesController < ApplicationController
 
     respond_to do |format|
       if @email_address.save
-        bingo! "signup_text"
         bingo! "codex_feature_image"
         
         # format.html { redirect_to @email_address, notice: 'Email address was successfully created.' }
