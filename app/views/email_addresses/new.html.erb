@@ -3,8 +3,12 @@
         <div class="feature span12">
             <h2 class="motto">Tear up the Notebook with <strong>Codex App</strong>.</h2>
             <h3 class="subheader">The smart notebook for your iPad.</h3>
-
-			<%= image_tag("notebook-on-table-4.1.png", :id => "feature-screenshot", :alt => "Notebook and papers on desk") %>
+<% if (ab_test("codex_feature_image")) %>
+			<%= image_tag("codex_feature.png", :id => "feature-screenshot", :alt => "Codex screens") %>
+<% else %>			
+			<%# = image_tag("codex_squared_feature.png", :id => "feature-screenshot", :alt => "Codex screens") %>
+			<%= image_tag("ideas_set_free_feature.png", :id => "feature-screenshot", :alt => "Codex screens") %>			
+<% end %>			
         </div>
     </div>
     <div class="row">
